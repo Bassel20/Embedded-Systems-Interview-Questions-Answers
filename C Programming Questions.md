@@ -1,13 +1,13 @@
 # C Language Interview Questions & Answers for Embedded SW Engineers #
 
 ## Questions ##
-* [Q1: Explain C compilation process in detail](https://github.com/)
+* [Q1: Explain C compilation process in details](https://github.com/)
 * [Q2: What is the difference between static, extern, volatile and register keywords?](https://github.com/)
 
 
 ## Questions & Answers ##
 
-### Q1: Explain C compilation process in detail ###
+### Q1: Explain C compilation process in details ###
 
 The C compilation process converts source code into object code or machine code. 
 The compilation process can be divided into four steps:
@@ -41,8 +41,8 @@ The final output of the compilation process is an executable file that can be ru
 
 **Volatile** is used to tell the compiler that a variable's value may be changed several times by some external entity or hardware, and that the compiler should not optimize away reads or writes to that variable. It tells the compiler that the variable's value can change unexpectedly, and that the value should be re-read or re-written every time it is accessed. An optimized variable can be invisible to other threads and never reach the main memory.
 
-#Extern# is used to declare a variable or function that is defined in another source file or module. When a variable or function is declared as extern, the compiler knows that it is not defined in the current file and looks for its definition in other source files or modules.
+**Extern** is used to declare a variable or function that is defined in another source file or module. When a variable or function is declared as extern, the compiler knows that it is not defined in the current file and looks for its definition in other source files or modules.
 
-#Static# is used to create a variable that is allocated for the entire lifetime of the program. A static variable can be declared inside a function or outside it, and it retains its value between function calls. If declared inside a function, the variable has local scope, which means it can only be accessed within that function. If declared outside a function, the variable has global scope, which means it can be accessed from any function in the program.
+**Static** is used to create a variable that is allocated for the entire lifetime of the program. A static variable can be declared inside a function or outside it, and it retains its value between function calls. If declared inside a function, the variable has local scope, which means it can only be accessed within that function. If declared outside a function, the variable has global scope, which means it can be accessed from any function in the program.
 
-#Register# is used to tell the compiler to store the variable in a register instead of memory. This can result in faster access to the variable because registers are faster than memory. However, the use of “register” is only a suggestion to the compiler, and it may choose to ignore the request if it cannot be satisfied due to the limited number of registers available.
+**Register** is used to tell the compiler to store the variable in a register instead of memory. This can result in faster access to the variable because registers are faster than memory. However, the use of “register” is only a suggestion to the compiler, and it may choose to ignore the request if it cannot be satisfied due to the limited number of registers available.
