@@ -9,4 +9,4 @@ The questions are divided into the following categories:
 * [Communication Protocols](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Communication%20Protocols%20Questions.md)
 * [Real Time Operating Systems (RTOS)](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md)
 * [Problem Solving (Coding Questions)](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Problem%20Solving%20(Coding%20Questions).md)
-* [Resume Based Questions](*file link*)
+* [Resume Based Questions](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Resume%20Based%20Questions.md)
