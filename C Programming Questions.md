@@ -1,13 +1,13 @@
 # C Language Interview Questions & Answers for Embedded SW Engineers #
 
 ## Questions ##
-* [Q1: Explain C compilation process in details](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q1-explain-c-compilation-process-in-detail)
+* [Q1: Explain C compilation process in detail](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q1-explain-c-compilation-process-in-detail)
 * [Q2: What is the difference between static, extern, volatile and register keywords?](https://github.com/)
 
 
 ## Questions & Answers ##
 
-### Q1: Explain C compilation process in details ###
+### Q1: Explain C compilation process in detail ###
 
 The C compilation process converts source code into object code or machine code. 
 The compilation process can be divided into four steps:
