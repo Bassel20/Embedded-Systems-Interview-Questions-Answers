@@ -8,7 +8,7 @@
 
 * Q3: Have you worked on any projects involving real-time operating systems (RTOS)? Can you explain how you handled task scheduling, interrupt handling, and resource management in that project?
 
-* Q4: Have you developed any device drivers for embedded systems? Explain your experience in developing and integrating device drivers, and any challenges you faced during the process.
+* Q4: Have you developed any device drivers for microcontollers? Explain your experience in developing and integrating device drivers, and any challenges you faced during the process.
 
 * Q5: Provide an example of a project where you implemented a communication protocol (such as UART, SPI, I2C, or Ethernet) in an embedded system. Describe the protocol's role in the project and any difficulties you encountered.
 
