@@ -2,7 +2,7 @@
 
 ## Questions ##
 * [Q1: Explain C compilation process in detail](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q1-explain-c-compilation-process-in-detail)
-* [Q2: What is the difference between static, extern, volatile and register keywords?](https://github.com/](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q2-what-is-the-difference-between static-extern-volatile-and-register-keywords)
+* [Q2: What is the difference between static, extern, volatile and register keywords?](https://github.com/](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q2-what-is-the-difference-between-static-extern-volatile-and-register-keywords)
 
 
 ## Questions & Answers ##
