@@ -39,7 +39,7 @@ The final output of the compilation process is an executable file that can be ru
 
 ### Q2: What is the difference between static, extern, volatile and register keywords? ###
 
-#Volatile# is used to tell the compiler that a variable's value may be changed several times by some external entity or hardware, and that the compiler should not optimize away reads or writes to that variable. It tells the compiler that the variable's value can change unexpectedly, and that the value should be re-read or re-written every time it is accessed. An optimized variable can be invisible to other threads and never reach the main memory.
+*Volatile* is used to tell the compiler that a variable's value may be changed several times by some external entity or hardware, and that the compiler should not optimize away reads or writes to that variable. It tells the compiler that the variable's value can change unexpectedly, and that the value should be re-read or re-written every time it is accessed. An optimized variable can be invisible to other threads and never reach the main memory.
 
 #Extern# is used to declare a variable or function that is defined in another source file or module. When a variable or function is declared as extern, the compiler knows that it is not defined in the current file and looks for its definition in other source files or modules.
 
