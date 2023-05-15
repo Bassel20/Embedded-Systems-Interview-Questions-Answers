@@ -7,6 +7,6 @@ The questions are divided into the following categories:
 * [C Programming](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md)
 * [Embedded Concepts](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md)
 * [Communication Protocols](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Communication%20Protocols%20Questions.md)
-* [Real Time Operating Systems (RTOS)](*file link*)
+* [Real Time Operating Systems (RTOS)](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md)
 * [Problem Solving (Coding Questions)](*file link*)
 * [Resume Based Questions](*file link*)
