@@ -12,11 +12,11 @@
 The C compilation process converts source code into object code or machine code. 
 The compilation process can be divided into four steps:
 1.	Preprocessor
-o	Macros expansion
-o	File inclusion
-o	Conditional Compilation
-o	replaces the macros with their respective values
-o	includes the necessary header files.
+*	Macros expansion
+*	File inclusion
+*	Conditional Compilation
+*	replaces the macros with their respective values
+*	includes the necessary header files.
 
 2.	Compiler
 o	takes the preprocessed code and converts it into assembly code
