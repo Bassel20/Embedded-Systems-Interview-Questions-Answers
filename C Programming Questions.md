@@ -65,3 +65,18 @@ The #pragma in C is a directive that provides extra required details to the C co
 #pragma startup &nbsp; &nbsp; // Before the execution of main(), the function specified in pragma is needed to run\
 #pragma exit &nbsp; &nbsp; // Before the end of program, the function specified in pragma is needed to run\
 #pragma warn &nbsp; &nbsp; // Used to hide the warning messages.
+
+### Q5: Tell me about "const" keyword and its usage with pointers. ###
+
+In C language, the const keyword is used to indicate that a variable or pointer is read-only, which means that its value cannot be modified after it has been initialized. This is a useful tool for creating read-only variables and pointers that cannot be modified accidentally.\
+
+**const int\* ptr;**\
+pointer to int is initialized. the value of the integer being pointed to cannot be changed through ptr.
+
+**int num = 5;**\
+**const int\* ptr1 = &num;**\
+ptr1 is a pointer to a constant integer. It means that the integer value being pointed to by ptr1 cannot be modified using ptr1. However, you can modify the integer value through other non-constant pointers or directly by using the variable name itself.
+
+**int num = 5;**\
+**int\* const ptr2 = &num;**\
+ptr2 is a constant pointer to an integer. It means that the pointer itself cannot be changed to point to a different memory location, but you can modify the integer value being pointed to by ptr2.
