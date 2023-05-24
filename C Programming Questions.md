@@ -4,7 +4,7 @@
 * [Q1: Explain C compilation process in detail](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q1-explain-c-compilation-process-in-detail)
 * [Q2: What is the difference between static, extern, volatile and register keywords?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q2-what-is-the-difference-between-static-extern-volatile-and-register-keywords)
 * [Q3: How can we return multiple values from a function in C?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q3-how-can-we-return-multiple-values-from-a-function-in-C)
-* [Q4: What do you know about #pragma?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q4-what-do-you-know-about-#pragma)
+* [Q4: What do you know about #pragma?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q4-what-do-you-know-about-pragma)
 * [Q5: Tell me about const keyword and its usage with pointers.](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q5-tell-me-about-const-keyword-and-its-usage-with-pointers)
 
 ## Questions & Answers ##
