@@ -3,7 +3,7 @@
 ## Questions ##
 * [Q1: Explain C compilation process in detail](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q1-explain-c-compilation-process-in-detail)
 * [Q2: What is the difference between static, extern, volatile and register keywords?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q2-what-is-the-difference-between-static-extern-volatile-and-register-keywords)
-
+* [Q3: how can we return multiple values from a function in C?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q3-how-can-we-return-multiple-values-from-a-function-in-C?)
 
 ## Questions & Answers ##
 
@@ -50,3 +50,9 @@ The final output of the compilation process is an executable file that can be ru
 **Volatile** is used to tell the compiler that a variable's value may be changed several times by some external entity or hardware, and that the compiler should not optimize away reads or writes to that variable. It tells the compiler that the variable's value can change unexpectedly, and that the value should be re-read or re-written every time it is accessed. An optimized variable can be invisible to other threads and never reach the main memory.
 
 **Register** is used to tell the compiler to store the variable in a register instead of memory. This can result in faster access to the variable because registers are faster than memory. However, the use of “register” is only a suggestion to the compiler, and it may choose to ignore the request if it cannot be satisfied due to the limited number of registers available.
+
+### Q3: how can we return multiple values from a function in C? ###
+In C or C++, we cannot return multiple values from a function directly. But, we can use these tricks to return more than one value from a function:
+
+* call by reference: A function can modify the values of multiple variables by passing their memory addresses as pointers to the function.
+* Struct: A function can return a structure that contains multiple values.
