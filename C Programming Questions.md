@@ -52,7 +52,16 @@ The final output of the compilation process is an executable file that can be ru
 **Register** is used to tell the compiler to store the variable in a register instead of memory. This can result in faster access to the variable because registers are faster than memory. However, the use of “register” is only a suggestion to the compiler, and it may choose to ignore the request if it cannot be satisfied due to the limited number of registers available.
 
 ### Q3: How can we return multiple values from a function in C? ###
+
 In C or C++, we cannot return multiple values from a function directly. But, we can use these tricks to return more than one value from a function:
 
 * call by reference: A function can modify the values of multiple variables by passing their memory addresses as pointers to the function.
 * Struct: A function can return a structure that contains multiple values.
+
+### Q4: What do you know about #pragma? ###
+
+The #pragma in C is a directive that provides extra required details to the C compiler about how to process the source code. These extra details can be anything that was somehow not passed within the program or the code logic.\
+**Examples:**\
+#pragma startup &nbsp; &nbsp; // Before the execution of main(), the function specified in pragma is needed to run\
+#pragma exit &nbsp; &nbsp; // Before the end of program, the function specified in pragma is needed to run\
+#pragma warn &nbsp; &nbsp; // Used to hide the warning messages.
