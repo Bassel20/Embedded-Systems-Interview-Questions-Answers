@@ -10,7 +10,7 @@
 * [Q7: Explain ADC in detail.](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q7-explain-adc-in-detail)
 * [Q8: Explain Watchdog timer in detail.](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q8-explain-watchdog-timer-in-detail)
 * [Q9: Tell me about PWM.](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q9-tell-me-about-pwm)
-* [Q10: What is the difference between synchronous and Asynchronous functions?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q10-what-is-the-difference-between-synchronous-and-asynchronous-functions-)
+* [Q10: Explain how DMA works. What are some of the issues that you need to worry about when using DMA?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q10-explain-how-dma-works-what-are-some-of-the-issues-that-you-need-to-worry-about-when-using-dma)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Questions & Answers: ##
