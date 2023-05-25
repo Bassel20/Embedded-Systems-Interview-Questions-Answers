@@ -7,7 +7,7 @@
 * [Q4: What do you know about #pragma?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q4-what-do-you-know-about-pragma)
 * [Q5: Tell me about const keyword and its usage with pointers.](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q5-tell-me-about-const-keyword-and-its-usage-with-pointers)
 * [Q6: Tell me about dynamic memory allocation in C?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q6-tell-me-about-dynamic-memory-allocation-in-c)
-* [Q7: How can you call a function before main()?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q7-how-can-you-call-a-function-before-main())
+* [Q7: How can you call a function before main()?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q7-how-can-you-call-a-function-before-main)
 
 
 
