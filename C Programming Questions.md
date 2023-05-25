@@ -138,13 +138,13 @@ int main(void)
 }
 ```
 
-## Q8: What is the difference between reentrant and non-reentrant functions? ##
+### Q8: What is the difference between reentrant and non-reentrant functions? ###
 
 **A reentrant API** can be safely called/interrupted by multiple threads or processes simultaneously without causing data integrity issues or unexpected behavior. This is achieved by not relying on shared state or global variables, instead using local variables or passing parameters between function calls. typically used in multi-threaded or multi-process applications, as they can be called safely by multiple threads without any additional synchronization or locking mechanisms.
 
 **A non-reentrant API** cannot be safely called by multiple threads or processes simultaneously without causing data integrity issues or unexpected behavior as it relies on shared state or global variables. may require additional synchronization mechanisms, such as locks or semaphores, to ensure thread safety.
 
-## Q9: What is the difference between synchronous and Asynchronous functions? ##
+### Q9: What is the difference between synchronous and Asynchronous functions? ###
 
 **Synchronous functions** block the program until the function completes its task and returns a result. It is a blocking architecture, so the execution of each operation is dependent on the completion of the one before it. Each task requires an answer before moving on to the next iteration. This can be useful when you need the result immediately and don't need to do anything else until the result arrives.
 
