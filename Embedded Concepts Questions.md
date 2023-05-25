@@ -62,7 +62,7 @@ By using tail-chaining, the processor can avoid the overhead of saving and resto
 
 However, tail-chaining can also have some downsides. If the processor spends too much time servicing the current ISR, the higher-priority interrupt may be delayed significantly. Additionally, tail-chaining can make it more difficult to reason about interrupt handling, as the order of execution is not always straightforward.
 
-### Q4: What is the difference between reentrant and non-reentrant functions ? ###
+### Q4: What is the difference between reentrant and non-reentrant functions? ###
 
 **A reentrant API** can be safely called/interrupted by multiple threads or processes simultaneously without causing data integrity issues or unexpected behavior. This is achieved by not relying on shared state or global variables, instead using local variables or passing parameters between function calls. typically used in multi-threaded or multi-process applications, as they can be called safely by multiple threads without any additional synchronization or locking mechanisms.\
 **A non-reentrant API** cannot be safely called by multiple threads or processes simultaneously without causing data integrity issues or unexpected behavior as it relies on shared state or global variables. may require additional synchronization mechanisms, such as locks or semaphores, to ensure thread safety.
