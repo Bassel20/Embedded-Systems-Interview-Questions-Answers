@@ -9,6 +9,7 @@
 * [Q6: Tell me about dynamic memory allocation in C?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q6-tell-me-about-dynamic-memory-allocation-in-c)
 * [Q7: How can you call a function before main()?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q7-how-can-you-call-a-function-before-main)
 * [Q8: What is the difference between reentrant and non-reentrant functions?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q8-what-is-the-difference-between-reentrant-and-non-reentrant-functions)
+* [Q9: What is the difference between synchronous and Asynchronous functions?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q9-what-is-the-difference-between-synchronous-and-asynchronous-functions)
 
 
 
