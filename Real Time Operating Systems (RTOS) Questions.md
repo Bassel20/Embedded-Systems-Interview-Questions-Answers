@@ -3,6 +3,9 @@
 ## Questions ##
 * [Q1: What is a real time operating system?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q1-what-is-a-real-time-operating-system)
 * [Q2: Tell me about RTOS task states](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q2-tell-me-about-rtos-task-states)
+* [Q3: What is a kernel?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q3-what-is-a-kernel)
+* [Q4: What is the difference between preemptive and non-preemptive kernel?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q4-what-is-the-difference-between-preemptive-and-non-preemptive-kernel)
+* [Q5: Explain priority inheritance and inversion in real time operating system](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q5-explain-priority-inheritance-and-inversion-in-real-time-operating-system)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -31,3 +34,36 @@ Tasks in the Blocked state do not use any processing time and cannot be selected
 Like tasks that are in the Blocked state, tasks in the Suspended state cannot be selected to enter the Running state, but tasks in the Suspended state do not have a time out. Instead, tasks only enter or exit the Suspended state when explicitly commanded to do so through the vTaskSuspend() and xTaskResume() API calls respectively.
 
 ![Alt_text](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Figures/RTOS_task_states.gif)
+
+## Q3: What is a kernel? ##
+
+A kernel is the core component of the operating system that provides the foundation for managing system resources, such as the processor, memory, and I/O devices. The kernel is responsible for providing abstractions of hardware resources, managing access to those resources, and scheduling tasks to run on the processor.
+The kernel typically provides services such as:
+
+* **Task management:** The kernel manages tasks or threads that run concurrently in the system. It schedules and switches between tasks, manages task priorities, and provides mechanisms for synchronization and communication between tasks.
+ 
+* **Memory management:** The kernel manages the allocation and deallocation of memory resources to tasks, including virtual memory management.
+
+* **Device management:** The kernel manages access to I/O devices such as sensors, actuators, and communication interfaces. It provides mechanisms for interrupt handling and device driver management.
+ 
+* **Time management:** The kernel provides mechanisms for measuring and managing time, including timers, clock sources, and scheduling policies.
+
+* **Security:** The kernel provides mechanisms for controlling access to system resources and ensuring system security.
+
+## Q4: What is the difference between preemptive and non-preemptive kernel? ##
+
+**A preemptive kernel** allows higher-priority tasks to interrupt and pre-empt lower-priority tasks and switch to a higher priority task that is ready to run. 
+preemptive kernels offer better responsiveness to real-time events and better utilization of system resources, but can have higher overhead and require more complex synchronization mechanisms.
+
+**A non-preemptive kernel** does not allow the kernel to interrupt a running task. Instead, the running task must yield control to the kernel explicitly by making a system call or by blocking on a synchronization primitive. 
+Non-preemptive kernels provide simpler scheduling algorithms, lower overhead, and more predictability than preemptive kernels. However, they can be less responsive to real-time events and less efficient in utilizing system resources.
+
+## Q5: Explain priority inheritance and inversion in real time operating systems. ##
+
+**Priority inversion** occurs when a high-priority task is blocked by a lower-priority task that is currently accessing a shared resource. For example, if a low-priority task acquires a lock on a shared resource, and then a high-priority task also needs to access the same resource, it will be blocked by the lower-priority task, causing priority inversion. This can cause serious problems in real-time systems, as it can lead to missed deadlines and incorrect behavior. 
+
+**Priority inheritance** is a technique used to prevent priority inversion by temporarily raising the priority of the low-priority task to the level of the highest-priority task waiting for the shared resource.
+
+In priority inheritance, when a high-priority task needs to access a shared resource that is currently being held by a lower-priority task, the low-priority task's priority is temporarily raised to the level of the high-priority task, allowing it to release the shared resource immediately. This ensures that the high-priority task can continue to execute without delay, preventing priority inversion.
+
+Priority inheritance is typically implemented by the operating system or real-time kernel, and can be used in conjunction with other synchronization primitives, such as mutexes or semaphores, to prevent priority inversion.
