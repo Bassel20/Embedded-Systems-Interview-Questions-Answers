@@ -8,6 +8,7 @@
 * [Q5: Tell me about const keyword and its usage with pointers.](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q5-tell-me-about-const-keyword-and-its-usage-with-pointers)
 * [Q6: Tell me about dynamic memory allocation in C?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q6-tell-me-about-dynamic-memory-allocation-in-c)
 * [Q7: How can you call a function before main()?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q7-how-can-you-call-a-function-before-main)
+* [Q8: What is the difference between reentrant and non-reentrant API’s/functions?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q8-what-is-the-difference-between-reentrant-and-non-reentrant API’s/functions?)
 
 
 
@@ -135,3 +136,15 @@ int main(void)
     return 0;
 }
 ```
+
+## Q8: What is the difference between reentrant and non-reentrant API’s/functions? ##
+
+**A reentrant API** can be safely called/interrupted by multiple threads or processes simultaneously without causing data integrity issues or unexpected behavior. This is achieved by not relying on shared state or global variables, instead using local variables or passing parameters between function calls. typically used in multi-threaded or multi-process applications, as they can be called safely by multiple threads without any additional synchronization or locking mechanisms.
+
+**A non-reentrant API** cannot be safely called by multiple threads or processes simultaneously without causing data integrity issues or unexpected behavior as it relies on shared state or global variables. may require additional synchronization mechanisms, such as locks or semaphores, to ensure thread safety.
+
+## Q9: What is the difference between synchronous and Asynchronous functions? ##
+
+**Synchronous functions** block the program until the function completes its task and returns a result. It is a blocking architecture, so the execution of each operation is dependent on the completion of the one before it. Each task requires an answer before moving on to the next iteration. This can be useful when you need the result immediately and don't need to do anything else until the result arrives.
+
+**Asynchronous functions** allow the program to continue executing other tasks while waiting for the function to complete its task. It is a non-blocking architecture, so the execution of one task isn’t dependent on another, and tasks can run simultaneously. This can be useful when you have multiple tasks to perform and don't want to block the program while waiting for the function to complete.
