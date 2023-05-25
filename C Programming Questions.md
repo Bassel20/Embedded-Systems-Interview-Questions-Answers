@@ -6,6 +6,10 @@
 * [Q3: How can we return multiple values from a function in C?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q3-how-can-we-return-multiple-values-from-a-function-in-C)
 * [Q4: What do you know about #pragma?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q4-what-do-you-know-about-pragma)
 * [Q5: Tell me about const keyword and its usage with pointers.](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q5-tell-me-about-const-keyword-and-its-usage-with-pointers)
+* [Q6: Tell me about dynamic memory allocation in C?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q6-tell-me-about-dynamic-memory-allocation-in-c)
+* [Q7: How can you call a function before main()?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/C%20Programming%20Questions.md#q7-how-can-you-call-a-function-before-main())
+
+
 
 ## Questions & Answers ##
 
@@ -82,3 +86,51 @@ ptr1 is a pointer to a constant integer. It means that the integer value being p
 **int num = 5;**\
 **int\* const ptr2 = \&num;**\
 ptr2 is a constant pointer to an integer. It means that the pointer itself cannot be changed to point to a different memory location, but you can modify the integer value being pointed to by ptr2.
+
+### Q6: Tell me about dynamic memory allocation in C? ###
+
+In C, dynamic memory allocation is done in the heap memory segment of the RAM and is achieved using the functions malloc, calloc, and realloc. These functions are defined in the “stdlib.h”.
+
+**malloc:** used to allocate a block of memory of a specified size. The function takes in a single argument, which is the number of bytes of memory to allocate, and it returns a pointer to the first byte of the allocated block. The pointer it returns is of type void*, which is a generic pointer that can be implicitly converted to any other pointer type.  If allocation fails, the function returns NULL.\
+
+**calloc:** similar to malloc, but it also initializes the allocated memory to zero. It takes two arguments: the number of elements to allocate and the size of each element. The function returns a pointer to the first byte of the allocated block. If the allocation fails, the function returns NULL.\
+
+**realloc:** used to change the size of an allocated block of memory. It takes two arguments: a pointer to the memory block to be resized and the new size of the block. The function returns a pointer to the first byte of the resized block. If the allocation fails, the function returns NULL.\
+
+**free:** used to deallocate memory that was previously allocated using the malloc. takes a single argument which is a pointer to the block of memory to be deallocated. after calling free(), the contents of the memory block become undefined, and should not be accessed.
+
+After you allocate memory using one of these functions, you can access it using a pointer. Once you are done using the memory, you should free it using the **free()** function to avoid memory leaks.
+
+### Q7: How can you call a function before main()? ###
+
+In C, you can call a function before main() using either attribute constructor or #pragma. This can be useful if you need to perform some initialization before the main function is executed.\
+by declaring the function with the **\_\_attribute\_\_((constructor))** this specifies that the function should be called automatically before the main() function is executed.\
+**Example:**
+```
+#include <stdio.h>
+void my_function(void) __attribute__((constructor));
+void my_function(void) {
+    printf("This function is called before main()\n");
+}
+
+int main() 
+{
+    printf("This is the main function\n");
+    return 0;
+}
+```
+you can also use the **#pragma** preprocessor directive to specify a function that should be executed before the main() function.\
+**Example:**
+```
+#include <stdio.h>
+#pragma startup my_startup_function
+void my_startup_function(void) {
+    printf("This function is executed before main()\n");
+}
+
+int main(void) {
+
+    printf("This is the main function\n");
+    return 0;
+}
+```
