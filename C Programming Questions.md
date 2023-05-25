@@ -128,8 +128,8 @@ void my_startup_function(void) {
     printf("This function is executed before main()\n");
 }
 
-int main(void) {
-
+int main(void) 
+{
     printf("This is the main function\n");
     return 0;
 }
