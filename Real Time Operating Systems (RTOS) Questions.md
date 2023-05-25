@@ -68,7 +68,7 @@ In priority inheritance, when a high-priority task needs to access a shared reso
 
 Priority inheritance is typically implemented by the operating system or real-time kernel, and can be used in conjunction with other synchronization primitives, such as mutexes or semaphores, to prevent priority inversion.
 
-### Q6: What are mutexes and semaphores? ###
+## Q6: What are mutexes and semaphores? ##
 
 Mutexes and semaphores are both synchronization mechanisms in RTOS used to control access to shared resources between different tasks or threads. Mutexes provide exclusive access to a resource, while semaphores allow for controlled access based on a count. Mutexes are primarily used for mutual exclusion, while semaphores have broader applications.
 
