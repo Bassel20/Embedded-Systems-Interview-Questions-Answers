@@ -4,7 +4,7 @@
 * [Q1: Explain types of memory in embedded systems in detail](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q1-explain-types-of-memory-in-embedded-systems-in-detail)
 * [Q2: Explain how interrupts work in detail.](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q2-explain-how-interrupts-work-in-detail)
 * [Q3: What is interrupt tail-chaining?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q3-what-is-interrupt-tail-chaining)
-* [Q4: What is the difference between reentrant and non-reentrant API’s/functions?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q4-what-is-the-difference-between-reentrant-and-non-reentrant-api-s-functions)
+* [Q4: What is the difference between reentrant and non-reentrant functions?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q4-what-is-the-difference-between-reentrant-and-non-reentrant-functions)
 * [Q5: What is the difference between synchronous and Asynchronous functions?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q5-what-is-the-difference-between-synchronous-and-asynchronous-functions)
 * [Q6: How to measure the duty cycle of a signal with/without ICU (input capture unit)?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q6-how-to-measure-the-duty-cycle-of-a-signal-withwithout-icu-input-capture-unit)
 * [Q7: Explain ADC in detail.](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Embedded%20Concepts%20Questions.md#q7-explain-adc-in-detail.)
@@ -62,7 +62,7 @@ By using tail-chaining, the processor can avoid the overhead of saving and resto
 
 However, tail-chaining can also have some downsides. If the processor spends too much time servicing the current ISR, the higher-priority interrupt may be delayed significantly. Additionally, tail-chaining can make it more difficult to reason about interrupt handling, as the order of execution is not always straightforward.
 
-### Q4: What is the difference between reentrant and non-reentrant API’s/functions ? ###
+### Q4: What is the difference between reentrant and non-reentrant functions ? ###
 
 **A reentrant API** can be safely called/interrupted by multiple threads or processes simultaneously without causing data integrity issues or unexpected behavior. This is achieved by not relying on shared state or global variables, instead using local variables or passing parameters between function calls. typically used in multi-threaded or multi-process applications, as they can be called safely by multiple threads without any additional synchronization or locking mechanisms.\
 **A non-reentrant API** cannot be safely called by multiple threads or processes simultaneously without causing data integrity issues or unexpected behavior as it relies on shared state or global variables. may require additional synchronization mechanisms, such as locks or semaphores, to ensure thread safety.
