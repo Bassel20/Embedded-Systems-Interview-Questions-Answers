@@ -5,7 +5,7 @@
 * [Q2: Tell me about RTOS task states](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q2-tell-me-about-rtos-task-states)
 * [Q3: What is a kernel?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q3-what-is-a-kernel)
 * [Q4: What is the difference between preemptive and non-preemptive kernel?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q4-what-is-the-difference-between-preemptive-and-non-preemptive-kernel)
-* [Q5: Explain priority inheritance and inversion in real time operating system](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q5-explain-priority-inheritance-and-inversion-in-real-time-operating-system)
+* [Q5: Explain priority inheritance and inversion in real time operating system](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q5-explain-priority-inheritance-and-inversion-in-real-time-operating-systems)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
