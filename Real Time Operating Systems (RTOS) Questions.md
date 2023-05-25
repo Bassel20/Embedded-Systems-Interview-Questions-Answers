@@ -35,7 +35,7 @@ Like tasks that are in the Blocked state, tasks in the Suspended state cannot be
 
 ![Alt_text](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Figures/RTOS_task_states.gif)
 
-## Q3: What is a kernel? ##
+### Q3: What is a kernel? ###
 
 A kernel is the core component of the operating system that provides the foundation for managing system resources, such as the processor, memory, and I/O devices. The kernel is responsible for providing abstractions of hardware resources, managing access to those resources, and scheduling tasks to run on the processor.
 The kernel typically provides services such as:
@@ -50,7 +50,7 @@ The kernel typically provides services such as:
 
 * **Security:** The kernel provides mechanisms for controlling access to system resources and ensuring system security.
 
-## Q4: What is the difference between preemptive and non-preemptive kernel? ##
+### Q4: What is the difference between preemptive and non-preemptive kernel? ###
 
 **A preemptive kernel** allows higher-priority tasks to interrupt and pre-empt lower-priority tasks and switch to a higher priority task that is ready to run. 
 preemptive kernels offer better responsiveness to real-time events and better utilization of system resources, but can have higher overhead and require more complex synchronization mechanisms.
@@ -58,7 +58,7 @@ preemptive kernels offer better responsiveness to real-time events and better ut
 **A non-preemptive kernel** does not allow the kernel to interrupt a running task. Instead, the running task must yield control to the kernel explicitly by making a system call or by blocking on a synchronization primitive. 
 Non-preemptive kernels provide simpler scheduling algorithms, lower overhead, and more predictability than preemptive kernels. However, they can be less responsive to real-time events and less efficient in utilizing system resources.
 
-## Q5: Explain priority inheritance and inversion in real time operating systems. ##
+### Q5: Explain priority inheritance and inversion in real time operating systems. ###
 
 **Priority inversion** occurs when a high-priority task is blocked by a lower-priority task that is currently accessing a shared resource. For example, if a low-priority task acquires a lock on a shared resource, and then a high-priority task also needs to access the same resource, it will be blocked by the lower-priority task, causing priority inversion. This can cause serious problems in real-time systems, as it can lead to missed deadlines and incorrect behavior. 
 
@@ -68,7 +68,7 @@ In priority inheritance, when a high-priority task needs to access a shared reso
 
 Priority inheritance is typically implemented by the operating system or real-time kernel, and can be used in conjunction with other synchronization primitives, such as mutexes or semaphores, to prevent priority inversion.
 
-## Q6: What are mutexes and semaphores? ##
+### Q6: What are mutexes and semaphores? ###
 
 Mutexes and semaphores are both synchronization mechanisms in RTOS used to control access to shared resources between different tasks or threads. Mutexes provide exclusive access to a resource, while semaphores allow for controlled access based on a count. Mutexes are primarily used for mutual exclusion, while semaphores have broader applications.
 
