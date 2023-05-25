@@ -6,7 +6,7 @@
 * [Q3: What is a kernel?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q3-what-is-a-kernel)
 * [Q4: What is the difference between preemptive and non-preemptive kernel?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q4-what-is-the-difference-between-preemptive-and-non-preemptive-kernel)
 * [Q5: Explain priority inheritance and inversion in real time operating systems](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q5-explain-priority-inheritance-and-inversion-in-real-time-operating-systems)
-
+* [Q6: What are mutexes and semaphores?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q6-what-are-mutexes-and-semaphores)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Questions & Answers: ##
@@ -67,3 +67,46 @@ Non-preemptive kernels provide simpler scheduling algorithms, lower overhead, an
 In priority inheritance, when a high-priority task needs to access a shared resource that is currently being held by a lower-priority task, the low-priority task's priority is temporarily raised to the level of the high-priority task, allowing it to release the shared resource immediately. This ensures that the high-priority task can continue to execute without delay, preventing priority inversion.
 
 Priority inheritance is typically implemented by the operating system or real-time kernel, and can be used in conjunction with other synchronization primitives, such as mutexes or semaphores, to prevent priority inversion.
+
+### Q6: What are mutexes and semaphores? ###
+
+Mutexes and semaphores are both synchronization mechanisms in RTOS used to control access to shared resources between different tasks or threads. Mutexes provide exclusive access to a resource, while semaphores allow for controlled access based on a count. Mutexes are primarily used for mutual exclusion, while semaphores have broader applications.
+
+**Mutex**\
+Mutex is a mutual exclusion object that synchronizes access to a resource. It is created with a unique name at the start of a program. The Mutex is a locking mechanism that makes sure only one thread can acquire the Mutex at a time and enter the critical section. This thread only releases the Mutex when it exits the critical section.
+
+Example:
+```
+wait (mutex);
+...
+/* Critical Section */
+...
+signal (mutex);
+```
+A mutex is different than a semaphore as it is a locking mechanism while a semaphore is a signalling mechanism. A binary semaphore can be used as a Mutex but a Mutex can never be used as a semaphore.
+
+**Semaphore**\
+A semaphore is a signalling mechanism. A thread that is waiting on a semaphore can be signaled by another thread. This is different than a mutex as the mutex can be signaled only by the thread that called the wait function.
+
+A semaphore uses two atomic operations, wait and signal for process synchronization.
+
+The wait operation decrements the value of its argument S, if it is positive. If S is negative or zero, then no operation is performed.
+```
+wait(S)
+{
+   while (S<=0);
+   S--;
+}
+```
+The signal operation increments the value of its argument S.
+```
+signal(S)
+{
+   S++;
+}
+```
+There are mainly two types of semaphores i.e. counting semaphores and binary semaphores.
+
+Counting Semaphores are integer value semaphores and have an unrestricted value domain. These semaphores are used to coordinate the resource access, where the semaphore count is the number of available resources.
+
+The binary semaphores are like counting semaphores but their value is restricted to 0 and 1. The wait operation only works when the semaphore is 1 and the signal operation succeeds when semaphore is 0.
