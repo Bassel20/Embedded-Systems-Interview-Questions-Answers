@@ -103,7 +103,8 @@ After you allocate memory using one of these functions, you can access it using 
 
 ### Q7: How can you call a function before main()? ###
 
-In C, you can call a function before main() using either attribute constructor or #pragma. This can be useful if you need to perform some initialization before the main function is executed.\
+In C, you can call a function before main() using either attribute constructor or #pragma. This can be useful if you need to perform some initialization before the main function is executed.
+
 by declaring the function with the **\_\_attribute\_\_((constructor))** this specifies that the function should be called automatically before the main() function is executed.\
 **Example:**
 ```
