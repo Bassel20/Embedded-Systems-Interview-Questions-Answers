@@ -45,7 +45,9 @@ There are several types of RAM:
 
 ### Q2: Explain how interrupts work in detail. ###
 
-An interrupt is a signal that interrupts the normal program execution and directs the processor to execute a specific interrupt service routine (ISR). The interrupt process includes the following steps:
+Interrupts are events that require immediate attention. When an interrupt signal occurs, the normal program execution is temporarily suspended, and control is transferred to a specific Interrupt Service Routine (ISR) or interrupt handler. The ISR performs the necessary tasks to handle the interrupt, such as reading data from a peripheral or updating variables. Once the ISR completes, the interrupted program resumes its execution. Interrupts have priority levels, and higher-priority interrupts are serviced before lower-priority ones. Interrupts are managed by an interrupt controller and their addresses are stored in an interrupt vector table. Interrupts allow for efficient handling of time-critical events in embedded systems.
+
+The interrupt process includes the following steps:
 * The CPU executes the main program.
 * An interrupt occurs and the CPU saves the current state of the program.
 * The CPU jumps to the interrupt vector, which contains the address of the ISR.
