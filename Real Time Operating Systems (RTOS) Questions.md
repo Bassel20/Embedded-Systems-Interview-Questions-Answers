@@ -7,6 +7,7 @@
 * [Q4: What is the difference between preemptive and non-preemptive kernel?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q4-what-is-the-difference-between-preemptive-and-non-preemptive-kernel)
 * [Q5: Explain priority inheritance and inversion in real time operating systems](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q5-explain-priority-inheritance-and-inversion-in-real-time-operating-systems)
 * [Q6: What are mutexes and semaphores?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q6-what-are-mutexes-and-semaphores)
+* [Q7: What is a deadlock and when does it occur?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Real%20Time%20Operating%20Systems%20(RTOS)%20Questions.md#q7-what-is-a-deadlock-and-when-does-it-occur)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Questions & Answers: ##
@@ -116,3 +117,10 @@ The binary semaphores are like counting semaphores but their value is restricted
 a deadlock is a situation where two or more tasks or processes are blocked because each process is waiting for a resource held by another process. It occurs when there is a circular dependency among tasks or processes, and none of them can make progress.
 
 ![Alt_text](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Figures/deadlock.png)
+
+Deadlocks can occur due to the following four conditions, known as the Coffman conditions:
+
+* **Mutual Exclusion:** Resources involved in the deadlock can only be used by one task or process at a time and cannot be shared.
+* **Hold and Wait:** A task or process holds one or more resources while waiting to acquire additional resources.
+* **No Preemption:** Resources cannot be forcibly taken away from a task or process. It can only release them voluntarily.
+* **Circular Wait:** A circular chain of tasks or processes exists, where each is waiting for a resource held by another task or process in the chain.
