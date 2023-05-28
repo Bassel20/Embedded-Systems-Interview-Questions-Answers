@@ -110,3 +110,9 @@ There are mainly two types of semaphores i.e. counting semaphores and binary sem
 Counting Semaphores are integer value semaphores and have an unrestricted value domain. These semaphores are used to coordinate the resource access, where the semaphore count is the number of available resources.
 
 The binary semaphores are like counting semaphores but their value is restricted to 0 and 1. The wait operation only works when the semaphore is 1 and the signal operation succeeds when semaphore is 0.
+
+### Q7: What is a deadlock and when does it occur? ###
+
+a deadlock is a situation where two or more tasks or processes are blocked because each process is waiting for a resource held by another process. It occurs when there is a circular dependency among tasks or processes, and none of them can make progress.
+
+![Alt_text](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Figures/deadlock.png)
