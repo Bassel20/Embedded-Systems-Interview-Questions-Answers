@@ -1,7 +1,7 @@
 # Communication protocols interview questions #
 
 ## Questions ##
-* [Q1: What is the difference between synchronous and asynchronous communication protocols?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Communication%20Protocols.md#q1-what-is-the-difference-between-synchronous-and-asynchronous-communication-protocols)
+* [Q1: What is the difference between synchronous and asynchronous communication protocols?](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Communication%20Protocols%20Questions.md#q1-what-is-the-difference-between-synchronous-and-asynchronous-communication-protocols)
 
 
 ## Questions & Answers ##
