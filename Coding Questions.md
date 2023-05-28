@@ -1,6 +1,6 @@
 # C Coding questions for Embedded SW Engineers #
 
-## Questions & Answers##
+## Questions & Answers ##
 
 ### Q1: Write a C function that counts the number of ones in the binary representation of an integer number ###
 ```
