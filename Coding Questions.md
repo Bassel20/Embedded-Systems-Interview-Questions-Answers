@@ -62,6 +62,7 @@ Write a C function to perform a right circular shift for an unsigned 32 bit inte
 In the figure below,  0x17 (00010111) is circularly shifted right 1 time and the result is 0x8B (10001011).
 
 ![Alt_text](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Figures/circular_shift.png)
+
 **Example:**
 ```
 Input = 0xaabbccdd 
