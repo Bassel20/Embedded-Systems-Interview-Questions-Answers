@@ -119,6 +119,7 @@ char* lastLetters (char* x) {
 
 ### Q6: Values between two 8-bit unsigned integers in descending order inclusive
 Write a C function to return an array containing the values between two 8-bit unsigned integers in descending order inclusive. The function takes 2 values (LowerValue, UpperValue), it shall determine the values in between, and then arrange the sequence in descending order including the upper and lower values. If LowerValue is greater than UpperValue, return an array of 2 elements, both containing value = “0xFF”
+
 **Example:**
 ```
 Input:
