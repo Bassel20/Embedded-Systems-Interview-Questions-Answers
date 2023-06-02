@@ -35,6 +35,8 @@ double fifthRoot(double num)
 ### Write a C function to perform a right circular shift for an unsigned 32 bit integer a given number of times and copy the output to the third argument, and return 0 if OK and 0xFF if not. If number of shifts > 32, in this case copy input to output without doing any shifts.
 ### Example on 8 bits unsigned integer:
 
+![Alt_text](https://github.com/Bassel20/Embedded-Systems-Interview-Questions-Answers/blob/main/Figures/RTOS_task_states.gif)
+
 In the figure above,  0x17 (00010111) is circularly shifted right 1 time and the result is 0x8B (10001011), the bit marked in red is moved from right most position to left most position. 
 
 Example of the expected output:
