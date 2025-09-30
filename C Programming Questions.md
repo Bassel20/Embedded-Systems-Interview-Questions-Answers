@@ -73,6 +73,7 @@ The #pragma in C is a directive that provides extra required details to the C co
 #pragma startup &nbsp; &nbsp; // Before the execution of main(), the function specified in pragma is needed to run\
 #pragma exit &nbsp; &nbsp; // Before the end of program, the function specified in pragma is needed to run\
 #pragma warn &nbsp; &nbsp; // Used to hide the warning messages.
+#pragma once &nbsp; &nbsp; // Used to prevent multiple definition errors.
 
 ### Q5: Tell me about "const" keyword and its usage with pointers. ###
 
